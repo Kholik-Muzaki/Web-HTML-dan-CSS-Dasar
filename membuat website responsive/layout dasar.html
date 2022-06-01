@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 15px;
+        }
+
+        #header {
+            height: 100px;
+            width: 100%;
+            background-color: darkolivegreen;
+            font-size: 1em;
+        }
+
+        #main {
+            height: 500px;
+            width: 80%;
+            float: left;
+            background-color: brown;
+        }
+
+        .cols-4 {
+            height: 200px;
+            width: 23%;
+            margin: 1%;
+            background-color: blue;
+            float: left;
+            font-size: 1em;
+        }
+
+        #sidebar {
+            height: 500px;
+            width: 20%;
+            background-color: darkorange;
+            float: left;
+        }
+
+        #footer {
+            height: 40px;
+            width: 100%;
+            background-color: cyan;
+            clear: both;
+            font-size: 1.5em;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .cols-4 {
+                width: 48%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            
+            body {
+                font-size: 12px;
+            }
+            
+            .cols-4 {
+                width: 98%;
+            }
+
+            #main {
+                height: auto;
+            }
+
+            #sidebar,#main {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+   <div id="header">
+       <h1> WELCOME TO MY WEBSITE </h1>
+   </div>
+   <div id="main">
+       <div class="cols-4">TEXT DISINI</div>
+       <div class="cols-4">TEXT DISINI</div>
+       <div class="cols-4">TEXT DISINI</div>
+       <div class="cols-4">TEXT DISINI</div>
+   </div>
+   <div id="sidebar"></div> 
+   <div id="footer">copyright 2021</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    background-color: orangered;
+}
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.track{
+    height:150px;
+    width: 30%;
+    background: white;
+    border: 1px solid greenyellow;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:1024px) {
+    .track {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width:760px)
+{
+    .track {
+        width: 98%;
+    }
+    .track:nth-child(5){
+        order: -1;
+    }
+}

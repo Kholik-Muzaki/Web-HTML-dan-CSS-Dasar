@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="wrap2"></div>
+    <div id="wrap3"></div>
+    <div id="wrap4"></div>
+    <div id="wrap5"></div>
+    <div id="wrap6"></div>
+
+    <script>
+        // metode sort
+        var nama = ["kholik", "muzaki", "dera"];
+        document.getElementById("wrap").innerHTML= nama.sort();
+
+        //metode reverse
+        var nama2 = ["kholik", "dera", "muzaki"];
+        document.getElementById("wrap2").innerHTML= nama2.reverse();
+
+        //metode concat
+        var nama3=["kholik", "muzaki"];
+        var nama4=["dera", "febby", "auliya"];
+        var nama5=["asep", "paijo"];
+
+        var semuaNama=nama3.concat(nama4, nama5);
+
+        document.getElementById("wrap3").innerHTML= semuaNama;
+
+        //metode lenght
+        var nama3=["kholik", "muzaki"];
+        var nama4=["dera", "febby", "auliya"];
+        var nama5=["asep", "paijo"];
+
+        var semuaNama=nama3.concat(nama4, nama5);
+        document.getElementById("wrap5").innerHTML=semuaNama.length;
+
+        //join
+        var nama3=["kholik", "muzaki"];
+        var nama4=["dera", "febby", "auliya"];
+        var nama5=["asep", "paijo"];
+
+        var semuaNama=nama3.concat(nama4, nama5);
+        document.getElementById("wrap6").innerHTML=semuaNama.join(" | ")
+    </script>
+</body>
+</html>

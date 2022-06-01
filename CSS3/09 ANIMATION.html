@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> animation </title>
+        <style>
+            body{
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+            div:hover{
+                height: 150px;
+                width: 150px;
+                background: aqua;
+                animation-name: goyang;
+                animation-duration: 10s;
+                animation-iteration-count: 4;
+                animation-direction: alternate-reverse;
+                animation-play-state: running;
+                animation-fill-mode: forwards;
+                animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+            }
+           /*keyframes from dan to*/
+            /*@keyframes goyang {
+                from{background: aqua;}
+                to{background-color: red;}
+            }
+            */
+            /*keyframes dengan persen*/
+            @keyframes goyang{
+                0%{background: red; width: 100%;}
+                25%{background: blue;}
+                50%{background: chartreuse; width: 200px;}
+                75%{background: darkcyan;}
+                100%{background: coral; width: 20px;}
+            }
+            h2:hover{
+                animation-duration: 0s;
+            }
+        </style>
+    </head>
+    <body>
+        !__<h1> 12.41 PM </h1>__!
+        <div>
+            <h2>NGANTUK</h2>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    text-transform: uppercase
+}
+
+h2{
+    text-align: center;
+    text-transform: lowercase; 
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 30px;
+    text-align: justify;
+    color: green;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+
+#salam{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: royalblue;
+}

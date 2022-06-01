@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title> ini adalah seleetor baru dicss3</title>
+        <style>
+            body :not(h1) :not(input){
+                color: aqua;
+            }
+
+            p:first-child{
+                color: bisque;
+            }
+
+            p:last-child{
+                color: blue;
+            }
+
+            p:only-child{
+                font-size: 25px;
+            }
+
+            ul :nth-child(odd){
+                text-decoration: underline;
+            }
+
+            ul :nth-child(even){
+                color: blueviolet;
+            }
+
+            input{
+                color: black;
+            }
+
+            input:checked{
+                width: 50px;
+            }
+
+            input:enabled{
+                border: 2px solid greenyellow;
+            }
+
+            input:disabled{
+                border: 2px solid blueviolet;
+            }
+
+            input:invalid{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> selector pseudo classes </h1>
+            <div>
+                <p> paragraf pertama </p>
+                <p> paragraf kedua </p>
+                <p> paragraf ketiga </p>
+            </div>
+
+            <div>
+                <p> hanya paragraf ini </p>
+            </div>
+
+        <h1> Nth Child </h1>
+            <div>
+                <ul>
+                    <li> list pertama </li>
+                    <li> list kedua </li>
+                    <li> list ketiga </li>
+                    <li> list keempat </li>
+                </ul>
+            </div>
+
+        <h1> Pseudo pada input </h1>
+            <div>
+                <input type="checkbox" checked>male
+                <input type="checkbox">female
+                <br><br>
+
+                <input type="email" name="email" placeholder="masukkan email anda disini">
+                <input type="text" name="text" placeholder="masukkan nama aanda disini">
+                <input type="text" name="kota asal" placeholder="masukkan kota asal anda" disabled>
+                <br><br><br><br>
+                sekolah koding
+            </div>
+    </body>
+</html>

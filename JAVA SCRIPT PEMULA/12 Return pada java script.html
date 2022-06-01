@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="wrap2"></div>
+    <div id="wrap3"></div>
+
+    <script>
+        //return function
+
+        function printText() {
+            return "Sekolah Koding";
+        }
+        printText();
+        document.getElementById("wrap").innerHTML= printText();
+
+        //return function 2
+        function printText2() {
+            var a ="Sekolah";
+            var b ="Koding";
+            var c ="123";
+            return a + b;
+        }
+        printText2();
+        document.getElementById("wrap2").innerHTML= printText2();
+
+        //function return 3
+        function menjumlahkan(angka, angka2) {
+            return angka + angka2;
+        }
+
+        var text = menjumlahkan(20, 10);
+        document.getElementById("wrap3").innerHTML= text;
+    </script>
+</body>
+</html>

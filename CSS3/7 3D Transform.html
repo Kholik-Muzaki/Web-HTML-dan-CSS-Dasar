@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> ini adalah 3d transform </title>
+        <style>
+            div{
+                height: 100px;
+                width: 100px;
+                margin-bottom: 5px;
+            }
+            #div0{
+                perspective: 100px;
+                background-color: 
+                perspective-origin: 50% 50%;
+
+            }
+           #div1{
+                background-color: blue;
+                transform: rotateX(50deg);*/
+            }
+            #div2{
+                perspective: 100px;
+            }
+            #div3{
+                background-color: red;
+                transform: translateZ(1px) rotateX(20deg);
+                transition: transform 2s;
+            }
+            #div3:hover{
+                transform: translateZ(10px) rotateX(50deg);
+            }
+            #div4{
+                perspective: 100px;
+                perspective-origin: 60% 60%;
+            }
+            #div5{
+                background-color: brown;
+                transform: rotateY(50deg) scaleZ(1px);
+                transition: transform 2s;
+            }
+            #div5:hover{
+                transform:scaleZ(1.5) rotateY(45deg);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1> Perspective </h1>
+        <div id="div0">
+            <div id="div1"> </div>
+        </div>
+        <h1> translate and rotate </h1>
+        <div id="div2">
+            <div id="div3"> </div>
+
+        </div>
+
+        <h1> scale </h1>
+        <div id="div4">
+            <div id="div5"> </div>
+        </div>
+
+    </body>
+</html>

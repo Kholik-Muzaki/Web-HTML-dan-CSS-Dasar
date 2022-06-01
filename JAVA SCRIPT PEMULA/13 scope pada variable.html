@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="wrap2"></div>
+    <div id="wrap3"></div>
+
+    <script>
+        //variable global
+            //secara langsung
+                var text="sekolah koding";
+                document.getElementById("wrap").innerHTML= text;
+
+            //melalui sebuah function
+                var text2="sekolah koding2";
+                function printText(){
+                    document.getElementById("wrap").innerHTML=text2;
+
+                }
+                printText();
+
+            //variable local
+
+                function local(){
+                    var text3 = "sekolah koding3";
+                    document.getElementById("wrap2").innerHTML= text3;
+                }
+                local();
+
+            //mengubah variable local menjadi variable global
+            var text3 = "sekolah koding";
+                function cetak(){
+                    text3="situs lain";
+                }
+                cetak();
+                document.getElementById("wrap3").innerHTML= text3;
+    </script>
+</body>
+</html>

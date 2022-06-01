@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="wrap2"></div>
+
+    <script>
+        var a= Math.round(142.22222222222);
+        var b= 10; //range . jarak
+        var c= 5; //batas minimal
+                    //sehingga batas maksimal adalah c + b
+
+        var aneh= Math.floor(Math.random () *b) + c;
+
+        document.getElementById("wrap").innerHTML= a;
+        document.getElementById("wrap2").innerHTML= aneh;
+    </script>
+</body>
+</html>

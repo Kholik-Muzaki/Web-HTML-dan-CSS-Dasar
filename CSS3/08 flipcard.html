@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            ini adalah flipcard
+        </title>
+        <style>
+            body{
+                margin-top:50px;
+                margin-left: 75px;
+            }
+            #box{
+                perspective: 500px;
+            }
+            #card{
+                position: relative;
+                background-color: chartreuse;
+                height: 200px; width: 200px;
+                transition: transform 2s;
+                transform-style: preserve-3d;
+            }
+            #front, #back{
+                position:absolute;
+                top: 0%;
+                left: 0%;
+                height: 200px; width: 200px;
+                backface-visibility: hidden;
+            }
+            #front{
+                background: chartreuse;
+            }
+            #back{
+                transform: rotateY(180deg);
+                background: crimson;
+            }
+            #card:hover{
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="card"> 
+                <div id="front"> KHOLIK </div>
+                <div id="back"> MUZAKI </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: orange;
+}
+.flex-parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+.flex-child{
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}

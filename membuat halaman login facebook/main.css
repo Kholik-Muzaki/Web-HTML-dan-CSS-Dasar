@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    float: left;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.content-header {
+    background-color: #3a5795;
+    color: white;
+    padding: 10px 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-header form {
+    float: right;
+}
+
+.content-header label,
+.content-header input {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.content-header label {
+    font-size: 13px;
+}
+
+.content-header input[type="checkbox"] {
+    display: inline-block;
+}
+
+.group-form {
+    float: left;
+    margin-left: 10px;
+}
+
+.group-form a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgba(0,0,0,0.5);
+}
+
+.content-header input[type="submit"] {
+    background-color: #5972a8;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    margin-top: 15px;
+}
+
+/*content-middle*/
+
+.content-middle {
+    background-color: #edf0f5;
+}
+.content-middle .middle-left,
+.content-middle .middle-right {
+    float: left;
+    width: 50%;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.content-middle ul li {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content-middle ul li span {
+    margin-left: 5px;
+    color: grey;
+    font-weight: normal;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.middle-right p:nth-child(2) {
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.middle-right input {
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.middle-right input.inline {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    
+}
+
+.middle-right input.inline_last {
+    margin-right: 0%;
+}
+
+#birthday-info, #register-info {
+    font-size: 13px;
+    color: grey;
+}
+
+#register-info a,
+.middle-right p:last-child a {
+    text-decoration: none;
+    color: rgba(13, 13, 230, 0.507);
+}
+
+#register-info a:hover {
+    text-decoration: underline;
+}
+input[type="radio"] {
+    width: 30px;
+    display: inline;
+    margin-top: 15px;
+}
+
+.middle-right input[type="submit"] {
+    background-color: green;
+    margin-top: 15px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+}
+
+.middle-right form {
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.middle-right p:last-child {
+    color: grey;
+    margin-bottom: 50px;
+}
+
+/*content footer */
+
+.content-footer {
+    padding: 5px 0;
+}
+.content-footer a{
+    text-decoration: none;
+}
+
+.content-footer li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.content-footer ul:first-child {
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.content-footer p {
+    color: grey;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+

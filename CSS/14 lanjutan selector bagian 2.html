@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            lanjutan selector bagian dua
+        </title>
+
+        <style>
+            #menu a{
+                background: blue;
+                color: white;
+            }
+            h1, h2{
+                background: aqua;
+            }
+
+            p{
+                background: greenyellow;
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="menu">
+            <a href="">home</a>
+            <a href="">member</a>
+            <a href="">kontak</a>
+        </div>
+
+        <div id="heading">
+            <h1> Kontak Sekolah Koding</h1>
+            <br>
+            <h2> Hubungi Tim Sekolah Koding </h2>
+        </div>
+
+        <div id="formulir_nama_dan_pesan">
+            <form>
+                <fieldset>
+                    <legend> Nama dan Pesan </legend>
+                    <label for="nama"> Nama </label>
+                        <input type="text" placeholder="Nama Anda" id="nama">
+
+                        <br>
+                    
+                    <label for="pesan"> Pesan </label>
+                        <textarea value="pesan saya adalah......" id="pesan"></textarea>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="formulir_pilihan_data">
+            <form>
+                <fieldset>
+                    <legend> Pilihan Data </legend>
+                    <label for="hobi"> Hobi </label>
+                    <br>    
+                    <input type="checkbox" name="hobi" value="0"> Menggambar
+                    <input type="checkbox" name="hobi" value="0"> Menulis
+                    <input type="checkbox" name="hobi" value="0"> Menyanyi 
+                    <br> 
+                    <label for="jenis_kelamin"> Jenis Kelamin </label>
+                    <br>
+                    <input type="radio" name="jenis_kelamin" value="0" chacked> Laki-Laki 
+                    <input type="radio" name="jenis_kelamin" value="1"> Perempuan
+                    <br>
+                    <label for="pelajaran"> Pelajaran </label>
+                        <select>
+                            <option value="html"> HTML </option>
+                            <option value="css"> CSS </option>
+                            <option value="php"> PHP </option>
+                        </select>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="submit">
+            <input type="submit"> 
+        </div>
+
+        <div id="footer">
+            <p>
+                &copy, sekolah koding
+            </p>
+        </div>
+    </body>
+</html>

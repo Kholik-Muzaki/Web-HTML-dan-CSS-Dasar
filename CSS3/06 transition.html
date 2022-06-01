@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> ini adalah transition </title>
+        <style>
+            div{
+                height: 100px; width: 100px; background-color: aqua; margin-bottom: 5px;
+            }
+            #div1:hover{
+                width: 200px;
+                transition: 1s;
+            }
+            #div2:hover{
+                background-color: blue;
+                transition: 2s;
+            }
+            #div3:hover{
+                transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1) ;
+                height: 120px;
+                transition: 2s;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1> ini adalah transition </h1>
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+    </body>
+</html>

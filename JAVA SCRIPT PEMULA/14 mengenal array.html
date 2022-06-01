@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="wrap2"></div>
+    <div id="wrap3"></div>
+    <div id="wrap4"></div>
+
+    <script>
+        //mencetak suatu array
+
+        var kotak =["hilman","endy","tika"];
+        document.getElementById("wrap").innerHTML= kotak;
+
+        //mencetak bagian tertentu
+        var kotak2= ["hilman", "endy", "tika"];
+        document.getElementById("wrap2").innerHTML= kotak[2];
+
+        //menggabungkan dengan variable lain
+        var kotak3= ["hilman", "endy", "tika"];
+        var text= "namanya adalah " + kotak[1];
+
+        document.getElementById("wrap3").innerHTML= text;
+
+        //mengganti nilai suatu array
+        var kotak = ["hilman", "12", "tika"];
+        kotak[1] = "endy";
+        var text = "namanya adalah " + kotak[1];
+
+        document.getElementById("wrap4").innerHTML= text;
+    </script>
+</body>
+</html>
